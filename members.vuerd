@@ -4,7 +4,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -1,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -189,7 +189,7 @@
           "active": false,
           "left": 35,
           "top": 12,
-          "zIndex": 207,
+          "zIndex": 239,
           "widthName": 67.72998046875,
           "widthComment": 60
         },
@@ -257,6 +257,68 @@
         },
         "visible": true,
         "id": "5b914359-52e7-4e40-a2d1-c76a3eb67fcd"
+      },
+      {
+        "name": "MEMBERS_LOGIN",
+        "comment": "",
+        "columns": [
+          {
+            "name": "EMAIL",
+            "comment": "이메일 주소",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "9dfac175-ff7f-4904-b90b-f81226eb3034"
+          },
+          {
+            "name": "UNIQUE_ID",
+            "comment": "유니크_ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72.7890625,
+              "widthComment": 61.22998046875,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "91b7633f-2b21-4323-9914-646a0ecce2a5"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 554,
+          "top": 53,
+          "zIndex": 243,
+          "widthName": 115.41357421875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7823da5d-11f1-4d97-9398-991492692326"
       }
     ],
     "indexes": []
@@ -291,6 +353,32 @@
         "constraintName": "fk_members_to_회원 취미",
         "visible": true,
         "id": "19c36fdc-f4f0-43b0-899d-f67be4524577"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "5b4291ec-1036-4a8c-9224-5ea874d95c96",
+          "columnIds": [
+            "f52921c3-1e7f-40a0-9fd4-1bb5e57334ff"
+          ],
+          "x": 408.5732421875,
+          "y": 108,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "7823da5d-11f1-4d97-9398-991492692326",
+          "columnIds": [
+            "91b7633f-2b21-4323-9914-646a0ecce2a5"
+          ],
+          "x": 554,
+          "y": 108,
+          "direction": "left"
+        },
+        "constraintName": "fk_members_to_members_login",
+        "visible": true,
+        "id": "a16c0f40-0651-4e52-a71b-5f3955e85831"
       }
     ]
   }
