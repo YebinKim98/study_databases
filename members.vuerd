@@ -5,7 +5,7 @@
     "height": 2000,
     "scrollTop": -13,
     "scrollLeft": 0,
-    "zoomLevel": 1,
+    "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -212,7 +212,7 @@
           "active": false,
           "left": 565,
           "top": 302,
-          "zIndex": 33,
+          "zIndex": 4,
           "widthName": 67.72998046875,
           "widthComment": 60
         },
@@ -274,7 +274,7 @@
           "active": false,
           "left": 11,
           "top": 354,
-          "zIndex": 17,
+          "zIndex": 2,
           "widthName": 120.47265625,
           "widthComment": 61.22998046875
         },
@@ -330,36 +330,13 @@
               "widthDefault": 60
             },
             "id": "91b7633f-2b21-4323-9914-646a0ecce2a5"
-          },
-          {
-            "name": "MEMBERS_LOGIN_ID",
-            "comment": "회원 로그인 ID",
-            "dataType": "VARCHAR(50)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 135.6435546875,
-              "widthComment": 87.2236328125,
-              "widthDataType": 87.71875,
-              "widthDefault": 60
-            },
-            "id": "4b27ac93-3fea-4083-a847-de0110c48b58"
           }
         ],
         "ui": {
           "active": false,
           "left": 549,
           "top": 73,
-          "zIndex": 23,
+          "zIndex": 8,
           "widthName": 115.41357421875,
           "widthComment": 60
         },
@@ -421,7 +398,7 @@
           "active": false,
           "left": 11,
           "top": 571,
-          "zIndex": 35,
+          "zIndex": 5,
           "widthName": 92.3017578125,
           "widthComment": 60
         },
@@ -483,7 +460,7 @@
           "active": false,
           "left": 570,
           "top": 625,
-          "zIndex": 37,
+          "zIndex": 6,
           "widthName": 102.4072265625,
           "widthComment": 60
         },
@@ -568,7 +545,7 @@
           "active": false,
           "left": 1047,
           "top": 344,
-          "zIndex": 45,
+          "zIndex": 7,
           "widthName": 109.63720703125,
           "widthComment": 60
         },
@@ -640,8 +617,8 @@
           "columnIds": [
             "91b7633f-2b21-4323-9914-646a0ecce2a5"
           ],
-          "x": 787.79296875,
-          "y": 203.5,
+          "x": 748.059814453125,
+          "y": 183,
           "direction": "bottom"
         },
         "constraintName": "fk_members_to_members_login",
